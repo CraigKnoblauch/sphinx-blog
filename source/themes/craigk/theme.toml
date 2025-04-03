@@ -1,4 +1,5 @@
 # TOML for my custom theme
 [theme]
+inherit = "basic"
 
 [options]
