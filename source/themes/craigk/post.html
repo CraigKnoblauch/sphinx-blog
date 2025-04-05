@@ -1,0 +1,8 @@
+{% block content %}
+    <h1>POST CONTENT</h1>
+    {% for node in doctree.children %}
+        {% if node.tagname == 'paragraph' %}
+            <h1>{{ node.rawsource }}</h1>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

@@ -7,18 +7,18 @@ from sphinx.util.docutils import SphinxDirective, SphinxRole
 from sphinx.util.typing import ExtensionMetadata
 
 class IntroductionDirective(SphinxDirective):
-    required_arguments = 1
+    has_content = True
 
     def run(self) -> list[nodes.Node]:
-        paragraph_node = nodes.paragraph(text=f'{self.arguments[0]}')
-        return [paragraph_node]
+        print(f"Introduction Directive content: {self.content}")
+        return [nodes.paragraph(text=f"Introduction Directive content: {self.content}")]
     
 class ProfessionalExperienceDirective(SphinxDirective):
-    required_arguments = 1
+    has_content = True
 
     def run(self) -> list[nodes.Node]:
-        paragraph_node = nodes.paragraph(text=f'{self.arguments[0]}')
-        return [paragraph_node]
+        print(f"Professional Experience Directive content: {self.content}")
+        return [nodes.paragraph(text=f"Introduction Directive content: {self.content}")]
 
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_directive('introduction', IntroductionDirective)

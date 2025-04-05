@@ -1,6 +1,7 @@
 .. title:: Craig Knoblauch
 
 .. introduction:: 
+    
    A dedicated practitioner, I am honing my craft of software engineering.
 
    In each error, a puzzle. In each bug, an adventure. In each system, a world to explore.
