@@ -1,5 +1,6 @@
 # TOML for my custom theme
 [theme]
 inherit = "basic"
+stylesheets = ['./static/styles/tailwind.css']
 
 [options]

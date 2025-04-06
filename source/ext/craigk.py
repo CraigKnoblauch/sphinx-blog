@@ -24,6 +24,8 @@ def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_directive('introduction', IntroductionDirective)
     app.add_directive('professional_experience', ProfessionalExperienceDirective)
 
+    app.add_css_file('static/tailwind.css')
+
     return {
         'version': '0.1',
         'parallel_read_safe': True,
